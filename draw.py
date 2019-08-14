@@ -39,7 +39,7 @@ def get_triangles():
                     print(set1 | set2 | ssd)    # 打印并集
                     triangle_indices.add(tuple(sorted(list(set1 | set2 | ssd))))
 
-    triangles = []
+    triangles = []    # 一共有20个面
     for t_i in triangle_indices:
         total_points.append(viewpoints[t_i[0]])
         total_points.append(viewpoints[t_i[1]])
